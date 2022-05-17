@@ -1,0 +1,161 @@
+<div class="about-big-logos">
+  {% render 'aro-symbol-amarelo-azul' %}
+  {% render 'aro-symbol-verde-azul' %}
+  {% render 'aro-symbol-rosa-verde' %}
+</div>
+
+<h1 class="about-headline">{{ section.settings.headline }}</h1>
+
+<div class="about-first-section">
+  <div class="about-first-section--left">
+    {{ section.settings.firstp }}
+  </div>
+  <div class="about-first-section--right">
+    <img src="{{ section.settings.firstimage | img_url }}" />
+  </div>
+</div>
+
+<div class="about-second-section">
+  <div class="about-second-section--left">
+    <img class="about-image" src="{{ section.settings.secondimage | img_url }}" />
+    <img class="about-image" src="{{ section.settings.thirdimage | img_url }}" />
+  </div>
+  <div class="about-second-section--right">
+    <div class="about-second-section__big-text">
+      {{ section.settings.secondp }}
+    </div>
+    <div class="about-second-section__small-text">
+      {{ section.settings.thirdp }}
+    </div>
+  </div>
+</div>
+
+<div class="about-team-section">
+  <div class="about-team-section--left">
+    <h3>Equipe</h3>
+  </div>
+  <div class="about-team-section--right grid grid--uniform">
+    {% for block in section.blocks %}
+      <div class="grid__item team-member medium-up--one-third small--one-half" {{ block.shopify_attributes }}>
+        {% case block.type %}
+        {% when 'team' %}
+          <img src="{{ block.settings.image | img_url }}" class="team-member-image">
+          <div class="team-member-name">
+            {{ block.settings.name }},
+          </div>
+          <div class="team-member-role">
+            {{ block.settings.role }}
+          </div>
+        {% endcase %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="about-why-section">
+  <h3>Porquoi Arô</h3>
+
+  <div class="about-why-section__reasons  grid grid--uniform">
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-1' %}
+      <div>100% dupla face com total aproveitamento de uma roupa, você na verdade está comprando duas peças.</div>
+    </div>
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-2' %}
+      <div>Vendemos tudo separadamente para total liberdade de escolha e tamanhos.</div>
+    </div>
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-3' %}
+      <div>Todos os produtos combinam entre si. Sim. Juro.</div>
+    </div>
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-4' %}
+      <div>Lycra é biodegradável. Usamos 100% tecnologia CO2Control, com proteção solar 50FPS.</div>
+    </div>
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-5' %}
+      <div>Produzido eticamente no Rio de Janeiro.</div>
+    </div>
+    <div class="about-why-section__reason grid__item medium-up--one-third small--one-half">
+      {% render 'aro-porque-6' %}
+      <div>Vamos do P ao XGG, 5 tamanhos de pura inclusividade.</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Sobre a Aro",
+  "settings": [
+    {
+      "id": "headline",
+      "type": "text",
+      "label": "Headline",
+      "default": "Aro swimwear é uma marca brasileira, nascida em Novembro de 2015, que tem como premissa principal a busca de levar a vida menos a sério."
+    },
+    {
+      "type": "header",
+      "content": "Primeira seção"
+    },
+    {
+      "id": "firstp",
+      "type": "textarea",
+      "label": "Texto",
+      "default": "Antes de praticar a moda praia como um produto, temos como nossa maior bandeira o simbolismo que as roupas de banho carregam: diversão. Afinal ninguém escolhe usar um maiô para se estressar ou coloca um biquíni para ir em algum lugar chato, certo? \n<br/><br/> São vestimentas que são ligadas ao entretenimento. E é nessa porta que a Aro Swimwear entra. Como nosso slogan diz, a Aro é “roupa pra se curtir”. Mais importante do que ter um foco exclusivo de praia, nos concentramos neste estado de espírito. \n<br/><br/> A curtição, o movimento do corpo e a elasticidade da lycra são nossas premissas principais e é por onde nos inspiramos para criar nossas peças. Levamos essa flexibilidade para o design, imagem e discurso. Acreditamos na beleza naturalmente humana e lutamos por uma não padronização do corpo."
+    },
+    {
+      "id": "firstimage",
+      "type": "image_picker",
+      "label": "Foto"
+    },
+    {
+      "type": "header",
+      "content": "Segunda seção"
+    },
+    {
+      "id": "secondp",
+      "type": "textarea",
+      "label": "Texto grande",
+      "default": "Através de nossos editoriais e modelagens projetadas para pessoas reais e diversas as para todos os tipos de pessoas, Aro apoia marca se concentra na auto-aceitação do nosso corpo atual. Focando em discussões sadias da multiplicidade dos corpos e a valorização de todas as belezas."
+    },
+    {
+      "id": "thirdp",
+      "type": "textarea",
+      "label": "Texto pequeno",
+      "default": "Amamos os dupla-faces, cortes autorais e releituras de décadas passadas. Nossas modelagens e produtos são desenvolvidos para trazer conforto e estado de espírito para quem as veste. Funciona como um convite para todos os tipos de corpos com uma grade expandida até o XGG. <br/><br/> Sugerimos também sempre a máxima utilidade junto com a defesa de como as roupas de praia deviam ser oferecidas: vendemos tudo separadamente. Somado com ao fato de nossas peças serem 2-em-1, as possibilidades são infinitas e as pessoas têm todo o poder de escolha."
+    },
+    {
+      "id": "secondimage",
+      "type": "image_picker",
+      "label": "Primeira foto"
+    },
+    {
+      "id": "thirdimage",
+      "type": "image_picker",
+      "label": "Segunda foto"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "team",
+      "name": "Equipe",
+      "settings": [
+        {
+          "id": "name",
+          "type": "text",
+          "label": "Nome"
+        },
+        {
+          "id": "role",
+          "type": "text",
+          "label": "Papel"
+        },
+        {
+          "id": "picture",
+          "type": "image_picker",
+          "label": "Foto"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
