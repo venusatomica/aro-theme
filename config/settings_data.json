@@ -34,7 +34,7 @@
     "favicon": "shopify:\/\/shop_images\/logo.instava7-01-01.png",
     "enable_ajax": true,
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/ARO_VENUS_LOGO_3749ce06-ca1f-44b7-9c86-0435cf90efe1.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/VENUS_VENUS_LOGO.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_image": "",
@@ -246,6 +246,18 @@
           "thirdp": "Amamos os dupla-faces, cortes autorais e releituras de décadas passadas. Nossas modelagens e produtos são desenvolvidos para trazer conforto e estado de espírito para quem as veste. Funciona como um convite para todos os tipos de corpos com uma grade expandida até o XGG. <br><br> Sugerimos também sempre a máxima utilidade junto com a defesa de como as roupas de praia deviam ser oferecidas: vendemos tudo separadamente. Somado com ao fato de nossas peças serem 2-em-1, as possibilidades são infinitas e as pessoas têm todo o poder de escolha.",
           "secondimage": "",
           "thirdimage": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
         }
       }
     },
