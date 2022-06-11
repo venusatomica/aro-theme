@@ -194,40 +194,35 @@
             "type": "team",
             "settings": {
               "name": "Danielle Cavalher",
-              "role": "Dona da porra toda",
-              "picture": ""
-            }
-          },
-          "1575752365919": {
-            "type": "team",
-            "settings": {
-              "name": "Isadora Barros",
-              "role": "Marketing",
-              "picture": "shopify:\/\/shop_images\/IsadoraBarros2.jpg"
+              "role": "Dona da porra toda"
             }
           },
           "1575752382343": {
             "type": "team",
             "settings": {
               "name": "Carlota",
-              "role": "Produção",
-              "picture": "shopify:\/\/shop_images\/unnamed-6.jpg"
+              "role": "Produção"
+            }
+          },
+          "1575752365919": {
+            "type": "team",
+            "settings": {
+              "name": "Isadora Barros",
+              "role": "Marketing"
             }
           },
           "1575752392463": {
             "type": "team",
             "settings": {
               "name": "Aline",
-              "role": "Marketing",
-              "picture": ""
+              "role": "Marketing"
             }
           },
           "1582215208336": {
             "type": "team",
             "settings": {
               "name": "Lina",
-              "role": "Marketing",
-              "picture": ""
+              "role": "Marketing"
             }
           }
         },
@@ -241,11 +236,8 @@
         "settings": {
           "headline": "Aro swimwear é uma marca brasileira, nascida em Novembro de 2015, que tem como premissa principal a busca de levar a vida menos a sério.",
           "firstp": "Antes de praticar a moda praia como um produto, temos como nossa maior bandeira o simbolismo que as roupas de banho carregam: diversão. Afinal ninguém escolhe usar um maiô para se estressar ou coloca um biquíni para ir em algum lugar chato, certo? <br><br> São vestimentas que são ligadas ao entretenimento. E é nessa porta que a Aro Swimwear entra. Como nosso slogan diz, a Aro é “roupa pra se curtir”. Mais importante do que ter um foco exclusivo de praia, nos concentramos neste estado de espírito. <br><br> A curtição, o movimento do corpo e a elasticidade da lycra são nossas premissas principais e é por onde nos inspiramos para criar nossas peças. Levamos essa flexibilidade para o design, imagem e discurso. Acreditamos na beleza naturalmente humana e lutamos por uma não padronização do corpo.",
-          "firstimage": "",
           "secondp": "Através de nossos editoriais e modelagens projetadas para pessoas reais e diversas as para todos os tipos de pessoas, Aro apoia marca se concentra na auto-aceitação do nosso corpo atual. Focando em discussões sadias da multiplicidade dos corpos e a valorização de todas as belezas.",
-          "thirdp": "Amamos os dupla-faces, cortes autorais e releituras de décadas passadas. Nossas modelagens e produtos são desenvolvidos para trazer conforto e estado de espírito para quem as veste. Funciona como um convite para todos os tipos de corpos com uma grade expandida até o XGG. <br><br> Sugerimos também sempre a máxima utilidade junto com a defesa de como as roupas de praia deviam ser oferecidas: vendemos tudo separadamente. Somado com ao fato de nossas peças serem 2-em-1, as possibilidades são infinitas e as pessoas têm todo o poder de escolha.",
-          "secondimage": "",
-          "thirdimage": ""
+          "thirdp": "Amamos os dupla-faces, cortes autorais e releituras de décadas passadas. Nossas modelagens e produtos são desenvolvidos para trazer conforto e estado de espírito para quem as veste. Funciona como um convite para todos os tipos de corpos com uma grade expandida até o XGG. <br><br> Sugerimos também sempre a máxima utilidade junto com a defesa de como as roupas de praia deviam ser oferecidas: vendemos tudo separadamente. Somado com ao fato de nossas peças serem 2-em-1, as possibilidades são infinitas e as pessoas têm todo o poder de escolha."
         }
       },
       "collection-template": {
@@ -323,6 +315,29 @@
           "display_type": "all",
           "sort": "alphabetical",
           "grid": 3
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": true
         }
       }
     },
