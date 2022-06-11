@@ -259,6 +259,71 @@
           "sort_enable": true,
           "tags_enable": true
         }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "enable_payment_button": true,
+          "show_share_buttons": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Talvez você também goste de",
+          "show_vendor": false
+        }
+      },
+      "collection-template-variant": {
+        "type": "collection-template-variant",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "12fd6207-d7e2-442f-943f-e0eab4401f75": {
+            "type": "collection",
+            "settings": {
+              "collection": "transicao-2022"
+            }
+          },
+          "cea6daca-6b25-4e0c-bf84-a8f694a0e85b": {
+            "type": "collection",
+            "settings": {
+              "collection": "sale"
+            }
+          },
+          "e8916346-788d-42cc-9a90-8839c7d89f30": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "12fd6207-d7e2-442f-943f-e0eab4401f75",
+          "cea6daca-6b25-4e0c-bf84-a8f694a0e85b",
+          "e8916346-788d-42cc-9a90-8839c7d89f30"
+        ],
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
       }
     },
     "content_for_index": [
