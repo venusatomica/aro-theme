@@ -178,9 +178,9 @@
           "align_logo": "left",
           "logo_max_width": 100,
           "main_linklist": "main-menu",
-          "message": false,
+          "message": true,
           "home_page_only": true,
-          "message_text": "Anuncie algo aqui",
+          "message_text": "TESTE",
           "message_link": "",
           "color_bg": "#7796a8",
           "color_text": "#ffffff"
