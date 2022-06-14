@@ -3,7 +3,25 @@
     <h1>{{ page.title }}</h1>
   </div>
 
+  {% section 'header' %}
+{% comment %}
+{% section 'feature-row' %}
+{% section 'feature-columns' %}
+{% section 'image-bar' %} vazio
+{% section 'footer' %} vazio
+{% section 'header' %}
+{% section 'header2' %} vazio
+{% section 'hero' %} imagenzona em cima
+
+{% section '' %}
+{% section '' %}
+{% endcomment %}
+
+
+
+
   <div class="rte">
     {{ page.content }}
   </div>
 </div>
+
