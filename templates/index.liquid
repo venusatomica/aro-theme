@@ -1,15 +1,16 @@
-{% comment %}
+
 {% unless template != 'index' %}
 <script> window.location.replace( '/collections/todos' ); </script>
 {% endunless %}
+{% comment %}
 Script acima redireciona home para "todos", remover o bloco para voltar ao comportamento normal
 {% endcomment %}
 
 
 
-{% section 'header' %}
+
 {% comment %}
-{% section 'feature-row' %}
+{% section 'header' %}{% section 'feature-row' %}
 {% section 'feature-columns' %}
 {% section 'image-bar' %} vazio
 {% section 'footer' %} vazio
