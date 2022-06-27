@@ -22,7 +22,7 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_twitter_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
     "social_facebook_link": "",
     "social_pinterest_link": "",
     "social_instagram_link": "",
@@ -51,7 +51,6 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "",
           "logo_max_width": 100,
           "main_linklist": "main-menu",
           "message": false,
@@ -59,7 +58,7 @@
           "message_text": "Anuncie algo aqui",
           "message_link": "",
           "color_bg": "#7796a8",
-          "color_text": "#fff"
+          "color_text": "#ffffff"
         }
       },
       "hero": {
@@ -162,7 +161,7 @@
           "link_list"
         ],
         "settings": {
-          "show_payment_icons": false,
+          "show_payment_icons": true,
           "color_footer_bg": "#f5f5f5",
           "color_footer_text": "#3d4246"
         }
