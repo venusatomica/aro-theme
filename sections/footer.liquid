@@ -1,4 +1,4 @@
-{% comment %}{%- assign social_icons = false -%}
+{% comment %}{{%- assign social_icons = false -%}
 {%- assign inline_list = false -%}
 
 {%- if
@@ -38,7 +38,7 @@
 {%- endcase -%}
 
 {% comment %} Create an appropriate hover color based on text color and brightness {% endcomment %}
-{%- assign footer_text_color = section.settings.color_footer_text -%}
+{% comment %}{%- assign footer_text_color = section.settings.color_footer_text -%}
 {%- assign footer_text_color_brightness = section.settings.color_footer_text | color_brightness -%}
 {%- if footer_text_color_brightness <= 26 -%}
   {%- assign footer_text_color_hover = footer_text_color | color_lighten: 25 -%}
@@ -65,7 +65,7 @@
 </style>
 
 {% comment %}{% unless template == 'index' %}{% endcomment %}
-<footer class="site-footer" role="contentinfo">
+{% comment %}<footer class="site-footer" role="contentinfo">
   <div class="site-footer__content">
     <div class="site-footer__newsletter two-sixths">
       <div class="footer-header">Assine nossa newsletter</div>
@@ -161,7 +161,7 @@
   </div>
 </footer>
 {% comment %}{% endunless %}{% endcomment %}
-
+{% comment %}
 
 {% schema %}
 {
@@ -628,7 +628,7 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}}
 
 {% endcomment %}
 {%- assign social_icons = false -%}
