@@ -334,10 +334,21 @@
           "cart_ajax_enable": true,
           "cart_notes_enable": true
         }
+      },
+      "16563458073e41629b": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Posts do blog",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
-
+      "16563458073e41629b"
     ],
     "blocks": {
       "548869057455184019": {
