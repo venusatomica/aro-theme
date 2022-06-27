@@ -114,17 +114,6 @@
           "autorotate_speed": 5
         }
       },
-      "featured-collections": {
-        "type": "collection",
-        "settings": {
-          "title": "Coleção em destaque",
-          "collection": "",
-          "grid": 3,
-          "rows": 1,
-          "show_vendor": false,
-          "show_view_all": true
-        }
-      },
       "feature-row": {
         "type": "feature-row",
         "settings": {
@@ -138,7 +127,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "link_list": {
+          "newsletter": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          },
+          "4df81078-1a46-45cb-80e4-4213225a2526": {
             "type": "link_list",
             "settings": {
               "title": "Links rápidos",
@@ -152,17 +147,19 @@
               "text": "<p>Compartilhe detalhes da loja, promoções ou conteúdo da marca com seus clientes.<\/p>"
             }
           },
-          "newsletter": {
-            "type": "newsletter",
+          "link_list": {
+            "type": "link_list",
             "settings": {
-              "title": "Newsletter"
+              "title": "Links rápidos",
+              "menu": "footer"
             }
           }
         },
         "block_order": [
-          "link_list",
+          "newsletter",
+          "4df81078-1a46-45cb-80e4-4213225a2526",
           "text",
-          "newsletter"
+          "link_list"
         ],
         "settings": {
           "show_payment_icons": false,
@@ -173,10 +170,11 @@
       "header2": {
         "type": "header2",
         "settings": {
-          "align_logo": "left",
-          "logo_max_width": 100,
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/encomendasvai2.gif",
+          "logo_max_width": 205,
           "main_linklist": "main-menu",
-          "message": false,
+          "message": true,
           "home_page_only": true,
           "message_text": "TESTE",
           "message_link": "",
@@ -336,20 +334,10 @@
           "cart_ajax_enable": true,
           "cart_notes_enable": true
         }
-      },
-      "1656344970fa485d16": {
-        "type": "newsletter",
-        "settings": {
-          "section_title": "Assine a nossa newsletter",
-          "subheading": "<p>Uma frase curta que descreva o que alguém receberá ao assinar<\/p>",
-          "show_background": true
-        }
       }
     },
     "content_for_index": [
-      "hero",
-      "featured-collections",
-      "1656344970fa485d16"
+
     ],
     "blocks": {
       "548869057455184019": {
