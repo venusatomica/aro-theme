@@ -65,7 +65,6 @@
       "hero": {
         "type": "hero",
         "settings": {
-          "image": "",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "medium",
@@ -79,10 +78,10 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "slideshow-0": {
+          "slideshow-1": {
             "type": "image",
+            "disabled": true,
             "settings": {
-              "image": "",
               "alignment": "center center",
               "slide_title": "Slide de imagem",
               "subheading": "Conte a história da sua marca com vídeos e imagens",
@@ -90,10 +89,10 @@
               "button_link": ""
             }
           },
-          "slideshow-1": {
+          "slideshow-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
-              "image": "",
               "alignment": "center center",
               "slide_title": "Slide de imagem",
               "subheading": "Conte a história da sua marca com vídeos e imagens",
@@ -103,8 +102,8 @@
           }
         },
         "block_order": [
-          "slideshow-0",
-          "slideshow-1"
+          "slideshow-1",
+          "slideshow-0"
         ],
         "settings": {
           "slideshow_height": "adapt",
@@ -121,15 +120,14 @@
           "title": "Coleção em destaque",
           "collection": "",
           "grid": 3,
-          "rows": 2,
+          "rows": 1,
           "show_vendor": false,
-          "show_view_all": false
+          "show_view_all": true
         }
       },
       "feature-row": {
         "type": "feature-row",
         "settings": {
-          "image": "",
           "layout": "left",
           "title": "Imagem com texto",
           "text": "<p>Emparelhe textos grandes com uma imagem para dar foco ao produto, coleção ou postagem do blog escolhido. Adicione detalhes sobre disponibilidade, estilo ou até mesmo um comentário.<\/p>",
@@ -338,13 +336,20 @@
           "cart_ajax_enable": true,
           "cart_notes_enable": true
         }
+      },
+      "1656344970fa485d16": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "Assine a nossa newsletter",
+          "subheading": "<p>Uma frase curta que descreva o que alguém receberá ao assinar<\/p>",
+          "show_background": true
+        }
       }
     },
     "content_for_index": [
       "hero",
       "featured-collections",
-      "feature-row",
-      "slideshow"
+      "1656344970fa485d16"
     ],
     "blocks": {
       "548869057455184019": {
