@@ -50,11 +50,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "align_logo": "left",
+          "align_logo": "center",
           "logo": "shopify:\/\/shop_images\/top_jami_calcinha_sonia_marrom0589.jpg",
           "logo_max_width": 100,
           "main_linklist": "footer",
-          "message": false,
+          "message": true,
           "home_page_only": true,
           "message_text": "Anuncie algo aqui",
           "message_link": "",
