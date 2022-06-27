@@ -6664,7 +6664,7 @@ body .a2a_menu {
     padding-left: 0;
   }
   .footer-header {
-    visibility: hidden;
+    visibility: visible;
 
     @include media-query(medium-down) {
       display: none;
