@@ -132,15 +132,41 @@
             "settings": {
               "title": "Newsletter"
             }
+          },
+          "2a20edaf-3439-42d8-aa78-bf08e2e2dc2b": {
+            "type": "link_list",
+            "settings": {
+              "title": "Links rápidos",
+              "menu": "mapa-do-site"
+            }
+          },
+          "312c68a9-41aa-42ea-b8a0-e03fedb85811": {
+            "type": "text",
+            "settings": {
+              "title": "Fale sobre o seu negócio",
+              "text": "<p>Compartilhe informações da loja, promoções ou conteúdo da marca com seus clientes.<\/p>"
+            }
+          },
+          "8168cc65-40c5-4033-9206-e83cc8f57395": {
+            "type": "text",
+            "settings": {
+              "title": "Fale sobre o seu negócio",
+              "text": "<p>Compartilhe informações da loja, promoções ou conteúdo da marca com seus clientes.<\/p>"
+            }
           }
         },
         "block_order": [
-          "8b658ab7-b5e1-4cf6-b831-36bfc02c087b"
+          "8b658ab7-b5e1-4cf6-b831-36bfc02c087b",
+          "2a20edaf-3439-42d8-aa78-bf08e2e2dc2b",
+          "312c68a9-41aa-42ea-b8a0-e03fedb85811",
+          "8168cc65-40c5-4033-9206-e83cc8f57395"
         ],
         "settings": {
           "show_payment_icons": true,
           "color_footer_bg": "#f5f5f5",
-          "color_footer_text": "#3d4246"
+          "color_footer_text": "#3d4246",
+          "show_currency_selector": true,
+          "show_locale_selector": true
         }
       },
       "header2": {
