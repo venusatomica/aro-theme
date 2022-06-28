@@ -190,7 +190,7 @@
 }
 </script>
 
-{% if template.name == 'index' %}
+{% comment %} {% if template.name == 'index' %}
   {% assign potential_action_target = shop.url | append: "{{ routes.search_url }}?q={search_term_string}" %}
   <script type="application/ld+json">
     {
@@ -205,7 +205,7 @@
       "url": {{ shop.url | append: page.url | json }}
     }
   </script>
-{% endif %}
+{% endif %} {% endcomment %}
 
 {% schema %}
 {
