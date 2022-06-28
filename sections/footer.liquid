@@ -64,7 +64,7 @@
   }
 </style>
 
-{% unless template == 'index' %}
+{% comment %} {% unless template == 'index' %} {% endcomment %}
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__content">
     <div class="site-footer__newsletter two-sixths">
@@ -160,7 +160,7 @@
     
   </div>
 </footer>
-{% endunless %}
+{% comment %} {% endunless %} {% endcomment %}
 
 
 {% schema %}

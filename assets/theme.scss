@@ -370,7 +370,10 @@ $color-bg-alt: rgba(105, 114, 123, 0.05);
 // Overlays
 $color-overlay-title-text: #fff;
 $color-image-overlay: #3d4246;
-$opacity-image-overlay: 0.4;
+$opacity-image-overlay: 0.4;;
+
+
+  ;
 
 $hover-overlay-opacity: 0.8;
 
@@ -444,11 +447,11 @@ $font-weight-body--bold: 700;
 $font-weight-body--bolder: 700;
 $font-weight-header--bold: 700;
 
-$font-stack-header: "Arial", sans-serif;
+$font-stack-header: "Favorit Bold", sans-serif;
 $font-style-header: normal;
 $font-weight-header: normal;
 
-$font-stack-body: "Arial", sans-serif;
+$font-stack-body: "Favorit Light", sans-serif;
 $font-style-body: normal;
 $font-weight-body: 500;
 
@@ -6661,7 +6664,7 @@ body .a2a_menu {
     padding-left: 0;
   }
   .footer-header {
-    visibility: visible;
+    visibility: hidden;
 
     @include media-query(medium-down) {
       display: none;
