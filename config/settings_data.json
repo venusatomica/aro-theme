@@ -341,10 +341,97 @@
         "type": "size-selector",
         "settings": {
         }
+      },
+      "16564377184e966d0c": {
+        "type": "slideshow",
+        "blocks": {
+          "16564377184e966d0c-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Slide de imagem",
+              "subheading": "Conte a história da sua marca com vídeos e imagens",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "16564377184e966d0c-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Slide de imagem",
+              "subheading": "Conte a história da sua marca com vídeos e imagens",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "16564377184e966d0c-0",
+          "16564377184e966d0c-1"
+        ],
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "1656439539cb4d2992": {
+        "type": "image-bar",
+        "blocks": {
+          "1656439539cb4d2992-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "1656439539cb4d2992-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "1656439539cb4d2992-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1656439539cb4d2992-0",
+          "1656439539cb4d2992-1",
+          "1656439539cb4d2992-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "165643957110b13c37": {
+        "type": "collection",
+        "settings": {
+          "title": "Coleção em destaque",
+          "collection": "calcinha-sonia",
+          "grid": 3,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
-
+      "16564377184e966d0c",
+      "1656439539cb4d2992",
+      "165643957110b13c37"
     ],
     "blocks": {
       "548869057455184019": {
