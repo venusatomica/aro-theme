@@ -127,39 +127,15 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "newsletter": {
+          "8b658ab7-b5e1-4cf6-b831-36bfc02c087b": {
             "type": "newsletter",
             "settings": {
               "title": "Newsletter"
             }
-          },
-          "4df81078-1a46-45cb-80e4-4213225a2526": {
-            "type": "link_list",
-            "settings": {
-              "title": "Links rápidos",
-              "menu": "footer"
-            }
-          },
-          "text": {
-            "type": "text",
-            "settings": {
-              "title": "Fale sobre o seu negócio",
-              "text": "<p>Compartilhe detalhes da loja, promoções ou conteúdo da marca com seus clientes.<\/p>"
-            }
-          },
-          "link_list": {
-            "type": "link_list",
-            "settings": {
-              "title": "Links rápidos",
-              "menu": "footer"
-            }
           }
         },
         "block_order": [
-          "newsletter",
-          "4df81078-1a46-45cb-80e4-4213225a2526",
-          "text",
-          "link_list"
+          "8b658ab7-b5e1-4cf6-b831-36bfc02c087b"
         ],
         "settings": {
           "show_payment_icons": true,
@@ -335,20 +311,14 @@
           "cart_notes_enable": true
         }
       },
-      "16563458073e41629b": {
-        "type": "featured-blog",
+      "size-selector": {
+        "type": "size-selector",
         "settings": {
-          "title": "Posts do blog",
-          "blog": "news",
-          "post_limit": 3,
-          "blog_show_author": false,
-          "blog_show_date": true,
-          "show_view_all": false
         }
       }
     },
     "content_for_index": [
-      "16563458073e41629b"
+
     ],
     "blocks": {
       "548869057455184019": {
