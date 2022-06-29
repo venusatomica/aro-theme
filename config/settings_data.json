@@ -379,58 +379,34 @@
           "autorotate_speed": 5
         }
       },
-      "1656439539cb4d2992": {
-        "type": "image-bar",
-        "blocks": {
-          "1656439539cb4d2992-0": {
-            "type": "image",
-            "settings": {
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "1656439539cb4d2992-1": {
-            "type": "image",
-            "settings": {
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          },
-          "1656439539cb4d2992-2": {
-            "type": "image",
-            "settings": {
-              "alignment": "center",
-              "link": "",
-              "cta_label": ""
-            }
-          }
-        },
-        "block_order": [
-          "1656439539cb4d2992-0",
-          "1656439539cb4d2992-1",
-          "1656439539cb4d2992-2"
-        ],
-        "settings": {
-          "section_height": "medium"
-        }
-      },
       "165643957110b13c37": {
         "type": "collection",
         "settings": {
-          "title": "Coleção em destaque",
-          "collection": "calcinha-sonia",
+          "title": "Terrosos",
+          "collection": "terrosos",
           "grid": 3,
           "rows": 1,
           "show_vendor": false,
-          "show_view_all": false
+          "show_view_all": true
+        }
+      },
+      "header3": {
+        "type": "header3",
+        "settings": {
+          "align_logo": "left",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Anuncie algo aqui",
+          "message_link": "",
+          "color_bg": "#7796a8",
+          "color_text": "#fff"
         }
       }
     },
     "content_for_index": [
       "16564377184e966d0c",
-      "1656439539cb4d2992",
       "165643957110b13c37"
     ],
     "blocks": {
