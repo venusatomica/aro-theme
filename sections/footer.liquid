@@ -11,8 +11,8 @@
 
 
 {%- assign show_country_selector = section.settings.show_currency_selector  -%}
-{%- if show_country_selector and localization.available_countries.size > 1 -%}
-  {%- assign country_selector = true -%}
+{%- if show_country_selector and localization.available_countries.size > 2 -%}
+  {%- assign country_selector = false -%}
 {%- endif -%}
 
 {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
