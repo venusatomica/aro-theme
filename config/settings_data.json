@@ -348,7 +348,8 @@
           "16564377184e966d0c-0": {
             "type": "image",
             "settings": {
-              "alignment": "center center",
+              "image": "shopify:\/\/shop_images\/DSC_2057.jpg",
+              "alignment": "right center",
               "slide_title": "Slide de imagem",
               "subheading": "Conte a história da sua marca com vídeos e imagens",
               "button_label": "",
@@ -358,6 +359,7 @@
           "16564377184e966d0c-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-27_at_16.55.08.png",
               "alignment": "center center",
               "slide_title": "Slide de imagem",
               "subheading": "Conte a história da sua marca com vídeos e imagens",
