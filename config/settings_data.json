@@ -386,7 +386,7 @@
         "settings": {
           "title": "Terrosos",
           "collection": "terrosos",
-          "grid": 3,
+          "grid": 5,
           "rows": 1,
           "show_vendor": false,
           "show_view_all": true
@@ -403,7 +403,7 @@
           "message_text": "Anuncie algo aqui",
           "message_link": "",
           "color_bg": "#7796a8",
-          "color_text": "#fff"
+          "color_text": "#ffffff"
         }
       }
     },
