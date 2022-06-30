@@ -386,7 +386,7 @@
         "settings": {
           "title": "Terrosos",
           "collection": "terrosos",
-          "grid": 5,
+          "grid": 3,
           "rows": 1,
           "show_vendor": false,
           "show_view_all": true
