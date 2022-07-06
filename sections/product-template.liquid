@@ -204,9 +204,11 @@
       </div>
 
       <div class="product-extras">
+        {% comment %}
         <button class="btn-link btn-extra-agregados">
           Agregados
         </button>
+      {% endcomment %}
         <div class="btn-link btn-medidas">
           <span class="btn-medidas-text">Tabela de Medidas</span>
           <div class="tabela-medidas">
@@ -263,7 +265,7 @@
           </div>
         </div>
         <button class="btn-link">
-          Frete e Devoluções
+          <a href="../pages/politica-de-trocas-e-devolucoes">Refund Policy</a>
         </button>
       </div>
     </div>
@@ -276,10 +278,10 @@
       role="status"
     ></p>
 
-    {%- comment -%}
+    {% comment %}
       Live region for announcing that the product form has been submitted and the
       product is in the process being added to the cart
-    {%- endcomment -%}
+    {% endcomment %}
     <p class="visually-hidden" data-loader-status
       aria-live="assertive"
       role="alert"
