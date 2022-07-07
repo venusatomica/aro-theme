@@ -193,6 +193,7 @@
       </div>
 
       <div class="product-info product-info--description">
+        {% include 'texto-encomenda' %}{% comment %} Texto condicional se o produto for sob encomenda{% endcomment %}
         {{ product.description }}
 
         <hr class="product-description-separator" />
