@@ -1,5 +1,5 @@
 {% for collection in product.collections %}
-    {% if collection.handle == 'sob-encomenda' and current_variant.inventory_quantity <= 0 %}
+    {% if collection.handle == 'sob-encomenda' %}
         Oiê! Temos alguns aviso pra quem quer levar uma peça sob encomenda:   
         <ul>
          <li>O prazo de processamento dos pedidos que contenham encomenda é de 15 a 21 dias</li>
