@@ -1,7 +1,6 @@
 {% if section.settings.message %}
   <style>
     {% if section.settings.logo != blank %}
-      
       .site-header__logo-image {
         max-width: {{ section.settings.logo_max_width | escape }}px;
       }
@@ -15,146 +14,27 @@
   </style>
 {% endif %}
 
-<div data-section-id="{{ section.id }}" data-section-type="header-section" class="header flex items-center justify-between absolute">
-  <div class="sidebar-menu nav-element">
-    <button class="btn-link">Menu2</button>
+{%if template == 'product' %}
+<div data-secion-id="{{ section.id }}" data-section-type="header-section" class="header header--product flex items-center justify-between absolute">
+  <div class="nav-back--desktop nav-element">
+    <button class="btn-link btn-back">Voltar</button>
   </div>
 
-  <div class="main-nav">
-    <div class="nav-element flex justify-center">
-      <nav class="small--hide" id="AccessibleNav" role="navigation">
-        <button class="btn-link mr6">Todos os produtos</button>
-        <button class="btn-link">Aro é Social</button>
-      </nav>
-      
+  <div class="main-nav main-nav--product">
+    <div class="logo-container">
       <div class="logo" role="banner">
         {% include 'logo' %}
-    
-        <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">
-          <ul id="MobileNav" class="mobile-nav">
-            {% for link in linklists[section.settings.main_linklist].links %}
-              {%- assign outerLoopIndex = forloop.index -%}
-    
-              <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
-                {% if link.links != blank %}
-                  {% capture child_list_handle %}{{ link.handle }}-{{ outerLoopIndex }}{% endcapture %}
-                  <button type="button" class="btn--link js-toggle-submenu mobile-nav__link{% if link.child_active %} mobile-nav__link--active{% endif %}" data-target="{{ child_list_handle }}" data-level="1" aria-expanded="false">
-                    <span class="mobile-nav__label">{{ link.title | escape }}</span>
-                    <div class="mobile-nav__icon">
-                      {% include 'icon-chevron-right' %}
-                    </div>
-                  </button>
-                  <ul class="mobile-nav__dropdown" data-parent="{{ child_list_handle }}" data-level="2">
-                    <li class="visually-hidden" tabindex="-1" data-menu-title="2">
-                      {{- link.title }} {{ 'layout.navigation.menu' | t -}}
-                    </li>
-                    <li class="mobile-nav__item border-bottom">
-                      <div class="mobile-nav__table">
-                        <div class="mobile-nav__table-cell mobile-nav__return">
-                          <button class="btn--link js-toggle-submenu mobile-nav__return-btn" type="button" aria-expanded="true" aria-label="{{ link.title }}">
-                            {% include 'icon-chevron-left' %}
-                          </button>
-                        </div>
-                        <span class="mobile-nav__sublist-link mobile-nav__sublist-header mobile-nav__sublist-header--main-nav-parent">
-                          <span class="mobile-nav__label">{{ link.title | escape }}</span>
-                        </span>
-                      </div>
-                    </li>
-    
-                    {% for childlink in link.links %}
-                      <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
-                        {% if childlink.links != blank %}
-                          {% capture grandchild_list_handle %}{{ childlink.handle }}-{{ outerLoopIndex }}-{{ forloop.index }}{% endcapture %}
-                          <button type="button" class="btn--link js-toggle-submenu mobile-nav__link mobile-nav__sublist-link" data-target="{{ grandchild_list_handle }}" aria-expanded="false">
-                            <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
-                            <div class="mobile-nav__icon">
-                              {% include 'icon-chevron-right' %}
-                            </div>
-                          </button>
-                          <ul class="mobile-nav__dropdown" data-parent="{{ grandchild_list_handle }}" data-level="3">
-                            <li class="visually-hidden" tabindex="-1" data-menu-title="3">
-                              {{- childlink.title }} {{ 'layout.navigation.menu' | t -}}
-                            </li>
-                            <li class="mobile-nav__item border-bottom">
-                              <div class="mobile-nav__table">
-                                <div class="mobile-nav__table-cell mobile-nav__return">
-                                  <button type="button" class="btn--link js-toggle-submenu mobile-nav__return-btn" data-target="{{ child_list_handle }}" aria-expanded="true" aria-label="{{ childlink.title }}">
-                                    {% include 'icon-chevron-left' %}
-                                  </button>
-                                </div>
-                                <a href="{{ childlink.url }}"
-                                  class="mobile-nav__sublist-link mobile-nav__sublist-header"
-                                  {% if childlink.current %} aria-current="page"{% endif %}
-                                >
-                                  <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
-                                </a>
-                              </div>
-                            </li>
-                            {% for grandchildlink in childlink.links %}
-                              <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
-                                <a href="{{ grandchildlink.url }}"
-                                  class="mobile-nav__sublist-link"
-                                  {% if grandchildlink.current %} aria-current="page"{% endif %}
-                                >
-                                  <span class="mobile-nav__label">{{ grandchildlink.title | escape }}</span>
-                                </a>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                        {% else %}
-                          <a href="{{ childlink.url }}"
-                            class="mobile-nav__sublist-link"
-                            {% if childlink.current %} aria-current="page"{% endif %}
-                          >
-                            <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
-                          </a>
-                        {% endif %}
-                      </li>
-                    {% endfor %}
-                  </ul>
-                {% else %}
-                  <a href="{{ link.url }}"
-                    class="mobile-nav__link{% if link.active %} mobile-nav__link--active{% endif %}"
-                    {% if link.current %} aria-current="page"{% endif %}
-                  >
-                    <span class="mobile-nav__label">{{ link.title | escape }}</span>
-                  </a>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </nav>
       </div>
     </div>
   </div>
 
-  <div class="minicart nav-element">
-    <div class="text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">
-      <div class="site-header__icons-wrapper">
-        {% if shop.customer_accounts_enabled %}
-          {% if customer %}
-            <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
-              {% include 'icon-login' %}
-              <span class="icon__fallback-text">{{ 'layout.customer.account' | t }}</span>
-            </a>
-          {% else %}
-            <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
-              {% include 'icon-login' %}
-              <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
-            </a>
-          {% endif %}
-        {% endif %}
-  
-        {% unless linklists[section.settings.main_linklist] == blank %}
-          <button type="button" class="btn--link site-header__icon site-header__menu js-mobile-nav-toggle mobile-nav--open" aria-controls="MobileNav"  aria-expanded="false" aria-label="{{ 'layout.navigation.menu' | t }}">
-            {% include 'icon-hamburger' %}
-            {% include 'icon-close' %}
-          </button>
-        {% endunless %}
-      </div>
-    </div>
+  <div class="nav-back--mobile nav-element">
+    <button class="btn-link btn-back">Voltar</button>
+  </div>
+
+  <div class="minicart minicart--product nav-element">
     <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
-      {% include 'icon-cart' %}
+      {% render 'aro-cart' %}
       <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
       <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
         <span data-cart-count>{{ cart.item_count }}</span>
@@ -162,10 +42,107 @@
       </div>
     </a>
   </div>
+</div>
+{% elsif template == 'index' %}
+<div data-section-id="{{ section.id }}" data-section-type="header-section" class="header flex items-center justify-between absolute">
+  <div class="logo-home-container">
+    <div class="logo" role="banner">
+      {% include 'logo' %}
+    </div>
+  </div>
+</div>
+{% else %}
+<div data-section-id="{{ section.id }}" data-section-type="header-section" class="header header--desktop flex items-center justify-between absolute">
+  <div class="sidebar-menu nav-element">
+    <button class="btn-link sidebar-menu-button">Menu</button>
+    <div class="sidebar-menu-wrapper">
+      {% render 'sidebar-menu' %}
+    </div>
+  </div>
   
+ <div class="main-nav">
+    <div class="nav-element flex justify-center">
+      <nav class="small--hide" id="AccessibleNav" role="navigation">
+        <div class="dib mr6">
+          <div class="all-products-menu-wrapper">
+            {% include 'all-products-menu' %}
+          </div>
+        </div>
+        {% comment %} <button class="btn-link">Aro é Social</button> {% endcomment %}
+      </nav>
+ 
+      
+      <div class="logo" role="banner">
+        {% include 'logo' %}
+      </div>
+      
+      <div class="text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">
+        <div class="site-header__icons-wrapper">
+          {% comment %} {% if shop.customer_accounts_enabled %}
+            {% if customer %}
+              <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
+                {% include 'icon-login' %}
+                <span class="icon__fallback-text">{{ 'layout.customer.account' | t }}</span>
+              </a>
+            {% else %}
+              <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
+                {% include 'icon-login' %}
+                <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
+              </a>
+            {% endif %}
+          {% endif %} {% endcomment %}
+    
+          {% unless linklists[section.settings.main_linklist] == blank %}
+            <button type="button" class="btn--link site-header__icon site-header__menu js-mobile-nav-toggle mobile-nav--open" aria-controls="MobileNav"  aria-expanded="false" aria-label="{{ 'layout.navigation.menu' | t }}">
+              {% include 'icon-hamburger' %}
+              {% include 'icon-close' %}
+            </button>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="minicart nav-element">
+    <button class="btn-link site-header__icon site-header__cart">
+      {% render 'aro-cart' %}
+      <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+      <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
+        <span data-cart-count>{{ cart.item_count }}</span>
+        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+      </div>
+    </button>
+  </div>
 </div>
 
+<div data-section-id="{{ section.id }}" data-section-type="header-section" class="header header--mobile nav-element flex items-center justify-between absolute">
+  <div class="dib mr6">
+    <button class="btn-link flex sidebar-menu-button">
+      {% render 'aro-mobile-menu' %}
+    </button>
+    <div class="sidebar-menu-wrapper">
+      {% render 'sidebar-menu' %}
+    </div>
+  </div>
+  
+  <div class="dib logo" role="banner">
+    {% include 'logo' %}
+  </div>
+      
+  <div class="dib minicart">
+    <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
+      {% render 'aro-cart' %}
+      <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+      <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
+        <span data-cart-count>{{ cart.item_count }}</span>
+        <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+      </div>
+    </a>
+  </div>
+</div>
+{% endif %}
 
+{% include 'minicart' %}
 
 
 <script type="application/ld+json">
@@ -206,7 +183,7 @@
       "url": {{ shop.url | append: page.url | json }}
     }
   </script>
-{% endif %} 
+{% endif %}
 
 {% schema %}
 {
