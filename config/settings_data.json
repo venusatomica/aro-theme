@@ -51,7 +51,6 @@
         "type": "header",
         "settings": {
           "align_logo": "center",
-          "logo": "shopify:\/\/shop_images\/top_jami_calcinha_sonia_marrom0589.jpg",
           "logo_max_width": 100,
           "main_linklist": "footer",
           "message": true,
@@ -404,6 +403,11 @@
           "message_link": "",
           "color_bg": "#7796a8",
           "color_text": "#ffffff"
+        }
+      },
+      "header-beneficios": {
+        "type": "header-beneficios",
+        "settings": {
         }
       }
     },
