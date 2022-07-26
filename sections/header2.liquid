@@ -44,13 +44,8 @@
   </div>
 </div>
 {% elsif template == 'index' %}
-<div data-section-id="{{ section.id }}" data-section-type="header-section" class="header flex items-center justify-between absolute">
-  <div class="logo-home-container">
-    <div class="logo" role="banner">
-      {% include 'logo' %}
-    </div>
-  </div>
-</div>
+2
+{% section 'header-beneficios' %}
 {% else %}
 <div data-section-id="{{ section.id }}" data-section-type="header-section" class="header header--desktop flex items-center justify-between absolute">
   <div class="sidebar-menu nav-element">
